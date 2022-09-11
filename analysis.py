@@ -67,7 +67,7 @@ class PentaconMeasurementData:
 
     def __init__(self):
         # path to folder with logger files
-        self.logger_folder = Path("C:/Users/Tom/PycharmProjects/pentacon_streamlit/data")
+        self.logger_folder = Path("./data")
         # list of logger files
         self.logger_files = [self.logger_folder / f"logger_{i}.csv" for i in range(1, 13)]
 
