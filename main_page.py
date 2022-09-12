@@ -48,7 +48,7 @@ time_stamp = pd.Timestamp.combine(date, time)
 bar_chart = pmd.get_3D_bar_chart(time_stamp)
 col2.pyplot(bar_chart.figure, clear_figure=True)
 
-# draw table at selected time_index
+# draw table at selected date and time
 df, datetime = pmd.get_table(Measurement.TEMPERATURE, time_stamp)
 col1.write(datetime)
 col1.dataframe(df.style.highlight_max(axis=None).format(precision=1))
